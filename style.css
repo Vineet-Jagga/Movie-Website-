@@ -1,0 +1,205 @@
+:root{
+    --sidebar-icon-width:6.25em;
+    --sidebar-border-width:1.1em;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.main{
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    
+    background-color: rgb(206, 206, 220);
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 220px;
+    box-sizing: border-box;
+    align-self: flex-start;
+    background-color: #D4DADF ;
+    transition: width 0.4s ease-out;
+}
+
+.sidebar--collapsed{
+    width: var(--sidebar-icon-width);
+}
+
+.sidebar--collapsed .sidebar_label{
+    display: none;
+}
+
+.sidebar_link{
+    display: flex;
+    align-items: center;
+    color: black ;
+    text-decoration: none;
+    height: 3.5em;
+    font-size:0.875em ;
+}
+
+.sidebar_link:hover{
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.sidebar_icon-container{
+    width: var(--sidebar-icon-width);
+    height: (var(--sidebar-icon-width)-0.25em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.sidebar_label{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+    height: 80px;
+    display: flex;
+}
+
+.navbar .material-symbols-outlined:hover{
+    cursor: pointer;
+    background-color: #f5f5f5;
+}
+
+.movie_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2em;
+    padding: 2em;
+    margin-bottom: 100px;
+}
+
+.movie{
+    position: relative;
+    display: inline-block;
+}
+
+.movie_cards img{
+    border-radius: 35px;
+    padding: 1em;
+}
+
+
+.movie-info{
+    position: absolute;
+    margin-bottom: -12.2em;
+    box-sizing: border-box;
+    padding: 2em;
+    border-radius: 0 0 17px 17px;
+    width: 18.7em;
+    bottom: 13.6em;
+    margin-left: 1em;
+    background: linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,.7) 100%)
+}
+
+.movie-info:hover{
+    z-index: -1;
+}
+
+.genre span{
+    background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(15, 239, 253, 1);
+  padding: 0.2em;
+  border-radius: 4px;
+  font-size: 0.875em;
+  position: absolute;
+  top: 10%;
+}
+
+.stars{
+    color: white;
+    margin-top: 0.8em;
+}
+
+.title{
+    height: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #D4DADF;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 0.3em;
+    font-size: 24px;
+    padding: 0.7em;
+    padding-left: 0;
+}
+
+.sidebar_search{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar_search input[type = "search"]{
+    display: flex;
+    width:35px;
+    justify-content: flex-end;
+}
+
+input{
+    border-radius: 8px;
+    margin-left: 0px;
+    width: 10em;
+}
+
+.btn_cont{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    font-size: 10px;
+    font-size: 26px;
+    border-radius: 8px;
+    padding: 12px;
+    width: 6em;
+}
+
+.sb_btn{
+    display: flex;
+    justify-content: center;
+    margin-left: 1em;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.logo{
+    display: flex;
+    margin-left: 1em;
+    margin-top: 0.4em;
+    width: 150px;
+    height: 50px;
+    
+}
+.heading{
+    margin-left: 10px;
+    text-shadow: #000000;
+    text-decoration:solid;
+    
+}
+.search{
+    margin-top: 30px;
+    margin-left:1000px;
+    width: 800px;
+    height: 500px;
+}
